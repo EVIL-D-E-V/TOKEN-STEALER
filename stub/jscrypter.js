@@ -8,6 +8,7 @@ var obfuscationResult = JavaScriptObfuscator.obfuscate(code, {
     compact: false,
     simplify: true,
     target: 'node',
+    stringArrayEncoding: ['rc4'],
     unicodeEscapeSequence: true
 });
 
