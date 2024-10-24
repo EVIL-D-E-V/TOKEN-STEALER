@@ -9,7 +9,7 @@ var obfuscationResult = JavaScriptObfuscator.obfuscate(code, {
     simplify: true,
     target: 'node',
     stringArrayEncoding: ['rc4'],
-    unicodeEscapeSequence: true
+    unicodeEscapeSequence: false
 });
 
 //create the file fn
