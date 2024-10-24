@@ -5,11 +5,10 @@ var code = fs.readFileSync(".//node_modules//input.js", "utf8");
 
 var obfuscationResult = JavaScriptObfuscator.obfuscate(code, {
     renameGlobals: true,
-    compact: false,
+    compact: true,
     simplify: true,
     target: 'node',
-    stringArrayEncoding: ['rc4'],
-    unicodeEscapeSequence: false
+    unicodeEscapeSequence: true
 });
 
 //create the file fn
